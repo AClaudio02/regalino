@@ -3,15 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <title>Regalino</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
-      <h1>Regalino</h1>
-      <p>Contenuto iniziale.</p>
+        <h1 class="valentine">Clicca sulla lettera per aprirla</h1>
+        <div class="envelope-wrapper">
+            <div id="envelope" class="close">
+                <div class="front flap" id="open"></div>
+                <div class="front pocket"></div>
+                <div class="letter">
+                    <div class="words line1">
+                      Ciao amore mio <br />
+                    questa lettera ti da diritto <br />
+                    a un trattamento dal parrucchiere <br />
+                    Con tanto amore, <br />
+                    Claudio
+                  </div>
+                </div>
+                <div class="hearts">
+                    <div class="heart a1"></div>
+                    <div class="heart a2"></div>
+                    <div class="heart a3"></div>
+                </div>
+            </div>
+        </div>
+        <button id="reset" type="button" class="reset-btn">Avanti</button>
     </main>
 
-    <script src="scrips.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
